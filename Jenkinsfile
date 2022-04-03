@@ -20,6 +20,13 @@ pipeline {
             '''
             }
         }
+    stage('finish') {
+        steps {
+            sh '''
+           echo "pipeline finished"
+            '''
+            }
+        }
     }
     post {
       always {
